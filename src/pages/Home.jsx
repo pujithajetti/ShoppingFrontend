@@ -19,7 +19,7 @@ const Home = () => {
     });
 
     // ✅ Fetch with error handling
-    fetch('https://shoppingbackend-lz5i.onrender.com')
+    fetch('https://shoppingbackend-lz5i.onrender.com/api/products')
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch products');
         return res.json();
